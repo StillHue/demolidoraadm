@@ -6,19 +6,19 @@ import { Phone, Mail, MapPin } from "lucide-react";
 
 const products = [
   {
-    name: "Cimento Portland",
+    name: "Demolição Controlada",
     image: "https://images.unsplash.com/photo-1487958449943-2429e8be8625",
-    description: "Cimento de alta qualidade para suas obras.",
+    description: "Serviços de demolição controlada com equipamentos modernos.",
   },
   {
-    name: "Tijolos",
-    image: "https://images.unsplash.com/photo-1460574283810-2aab119d8511",
-    description: "Tijolos resistentes e padronizados.",
+    name: "Demolição Industrial",
+    image: "https://images.unsplash.com/photo-1488972685288-c3fd157d7c7a",
+    description: "Especialistas em demolição de estruturas industriais.",
   },
   {
-    name: "Telhas",
-    image: "https://images.unsplash.com/photo-1439337153520-7082a56a81f4",
-    description: "Telhas de primeira linha para sua cobertura.",
+    name: "Remoção de Entulho",
+    image: "https://images.unsplash.com/photo-1487887235947-a955ef187fcc",
+    description: "Remoção e descarte adequado de resíduos de demolição.",
   },
 ];
 
@@ -31,10 +31,10 @@ const Index = () => {
       <section className="bg-construction-orange text-white py-16">
         <div className="container mx-auto px-4 text-center">
           <h1 className="text-4xl md:text-5xl font-bold mb-4">
-            Materiais de Construção de Qualidade
+            Demolidora ADM
           </h1>
           <p className="text-xl mb-8">
-            Encontre tudo que você precisa para sua obra
+            Experiência e segurança em serviços de demolição
           </p>
         </div>
       </section>
@@ -42,7 +42,7 @@ const Index = () => {
       {/* Products Section */}
       <section className="py-16 container mx-auto px-4">
         <h2 className="text-3xl font-bold text-center mb-12 text-construction-gray-dark">
-          Nossos Produtos
+          Nossos Serviços
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {products.map((product) => (
@@ -70,7 +70,7 @@ const Index = () => {
                 <Mail className="w-6 h-6 text-construction-orange" />
                 <div>
                   <h3 className="font-semibold text-lg">Email</h3>
-                  <p className="text-gray-600">contato@construmais.com</p>
+                  <p className="text-gray-600">contato@demolidoraadm.com</p>
                 </div>
               </div>
               <div className="flex items-center gap-4">
@@ -88,7 +88,7 @@ const Index = () => {
       {/* Footer */}
       <footer className="bg-construction-gray-dark text-white py-8">
         <div className="container mx-auto px-4 text-center">
-          <p>© 2024 ConstruMais. Todos os direitos reservados.</p>
+          <p>© 2024 Demolidora ADM. Todos os direitos reservados.</p>
         </div>
       </footer>
     </div>
