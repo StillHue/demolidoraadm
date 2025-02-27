@@ -8,7 +8,7 @@ const Header = () => {
       <div className="container mx-auto px-4 py-4 flex justify-between items-center">
         <div className="flex items-center gap-2">
           <img 
-            src="/lovable-uploads/fee8d349-2304-4f29-a0f7-61f97b359169.png" 
+            src="/lovable-uploads/3ee50cad-1245-4b3a-8b7d-c20a71bfa3cd.png" 
             alt="Demolidora ADM Logo" 
             className="h-12"
           />
