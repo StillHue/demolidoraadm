@@ -12,12 +12,12 @@ const products = [
   },
   {
     name: "Demolição Industrial",
-    image: "https://images.unsplash.com/photo-1488972685288-c3fd157d7c7a",
+    image: "https://images.unsplash.com/photo-1472396961693-142e6e269027",
     description: "Especialistas em demolição de estruturas industriais.",
   },
   {
     name: "Remoção de Entulho",
-    image: "https://images.unsplash.com/photo-1487887235947-a955ef187fcc",
+    image: "https://images.unsplash.com/photo-1433086966358-54859d0ed716",
     description: "Remoção e descarte adequado de resíduos de demolição.",
   },
 ];
