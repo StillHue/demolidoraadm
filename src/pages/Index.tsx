@@ -88,7 +88,7 @@ const Index = () => {
       {/* Footer */}
       <footer className="bg-construction-gray-dark text-white py-8">
         <div className="container mx-auto px-4 text-center">
-          <p>© 2024 Demolidora ADM. Todos os direitos reservados.</p>
+          <p>© 2025 Demolidora ADM. Todos os direitos reservados.</p>
         </div>
       </footer>
     </div>
