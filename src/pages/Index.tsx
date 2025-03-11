@@ -2,22 +2,22 @@
 import React from "react";
 import Header from "@/components/Header";
 import ProductCard from "@/components/ProductCard";
-import { Phone, Mail, MapPin } from "lucide-react";
+import { Phone, Mail, MapPin, Hammer, Building, Truck } from "lucide-react";
 
 const products = [
   {
     name: "Demolição Controlada",
-    image: "https://images.unsplash.com/photo-1487958449943-2429e8be8625",
+    icon: <Hammer className="w-12 h-12 text-white" />,
     description: "Serviços de demolição controlada com equipamentos modernos.",
   },
   {
     name: "Demolição Industrial",
-    image: "https://images.unsplash.com/photo-1472396961693-142e6e269027",
+    icon: <Building className="w-12 h-12 text-white" />,
     description: "Especialistas em demolição de estruturas industriais.",
   },
   {
     name: "Remoção de Entulho",
-    image: "https://images.unsplash.com/photo-1433086966358-54859d0ed716",
+    icon: <Truck className="w-12 h-12 text-white" />,
     description: "Remoção e descarte adequado de resíduos de demolição.",
   },
 ];
@@ -27,8 +27,8 @@ const Index = () => {
     <div className="min-h-screen bg-construction-gray-light">
       <Header />
       
-      {/* Hero Section */}
-      <section className="bg-construction-orange text-white py-16">
+      {/* Hero Section with Gradient */}
+      <section className="bg-gradient-to-r from-construction-orange to-orange-400 text-white py-16">
         <div className="container mx-auto px-4 text-center">
           <h1 className="text-4xl md:text-5xl font-bold mb-4">
             Demolidora ADM
@@ -51,8 +51,8 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Contact Section */}
-      <section className="bg-white py-16">
+      {/* Contact Section with Gradient */}
+      <section className="bg-gradient-to-b from-white to-gray-100 py-16">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-bold text-center mb-12 text-construction-gray-dark">
             Entre em Contato
@@ -60,21 +60,27 @@ const Index = () => {
           <div className="max-w-2xl mx-auto">
             <div className="space-y-6">
               <div className="flex items-center gap-4">
-                <Phone className="w-6 h-6 text-construction-orange" />
+                <div className="bg-gradient-to-r from-construction-orange to-orange-400 p-3 rounded-full">
+                  <Phone className="w-6 h-6 text-white" />
+                </div>
                 <div>
                   <h3 className="font-semibold text-lg">Telefone</h3>
                   <p className="text-gray-600">(11) 99999-9999</p>
                 </div>
               </div>
               <div className="flex items-center gap-4">
-                <Mail className="w-6 h-6 text-construction-orange" />
+                <div className="bg-gradient-to-r from-construction-orange to-orange-400 p-3 rounded-full">
+                  <Mail className="w-6 h-6 text-white" />
+                </div>
                 <div>
                   <h3 className="font-semibold text-lg">Email</h3>
                   <p className="text-gray-600">contato@demolidoraadm.com</p>
                 </div>
               </div>
               <div className="flex items-center gap-4">
-                <MapPin className="w-6 h-6 text-construction-orange" />
+                <div className="bg-gradient-to-r from-construction-orange to-orange-400 p-3 rounded-full">
+                  <MapPin className="w-6 h-6 text-white" />
+                </div>
                 <div>
                   <h3 className="font-semibold text-lg">Endereço</h3>
                   <p className="text-gray-600">Av. Paulista, 1000 - São Paulo, SP</p>
@@ -85,8 +91,8 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Footer */}
-      <footer className="bg-construction-gray-dark text-white py-8">
+      {/* Footer with Gradient */}
+      <footer className="bg-gradient-to-r from-construction-gray-dark to-gray-700 text-white py-8">
         <div className="container mx-auto px-4 text-center">
           <p>© 2025 Demolidora ADM. Todos os direitos reservados.</p>
         </div>

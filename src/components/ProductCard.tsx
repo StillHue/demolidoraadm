@@ -4,20 +4,17 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
 interface ProductCardProps {
   name: string;
-  image: string;
+  icon: React.ReactNode;
   description: string;
 }
 
-const ProductCard = ({ name, image, description }: ProductCardProps) => {
+const ProductCard = ({ name, icon, description }: ProductCardProps) => {
   return (
-    <Card className="overflow-hidden hover:shadow-lg transition-shadow animate-fadeIn">
+    <Card className="overflow-hidden hover:shadow-lg transition-shadow animate-fadeIn border-0">
       <CardHeader className="p-0">
-        <img
-          src={image}
-          alt={name}
-          className="w-full h-48 object-cover"
-          loading="lazy"
-        />
+        <div className="bg-gradient-to-r from-construction-orange to-orange-400 p-8 flex justify-center items-center">
+          {icon}
+        </div>
       </CardHeader>
       <CardContent className="p-4">
         <CardTitle className="text-lg mb-2 text-construction-gray-dark">
